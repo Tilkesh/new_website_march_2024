@@ -1,0 +1,58 @@
+.projectInMindWr{
+    background-color: #f3fbff;
+}
+
+.wrapper{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.innerProInMind{
+    padding: 0 25px;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerProInMind p{
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0px 50px 0px 0px;
+}
+
+.contactSalesBtn{
+    color: #077FC8;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    border: solid 2px #077FC8;
+    padding: 6px 36px 6px 16px;
+    border-radius: 6px;
+}
+
+.contactSalesBtn::after{
+    content: "";
+    width: 14px;
+    height: 12px;
+    background: url(/assets/images/buttons/arrow_right_blue_contact_sales_btn.svg);
+    position: absolute;
+    transform: translateY(60%);
+    margin-left: 8px;
+    transition: ease-in-out 0.4s all;
+}
+
+.contactSalesBtn:hover:after{
+    margin-left: 12px;
+}
+
+.contactSalesBtn:hover{
+    background: #ffffff;
+}

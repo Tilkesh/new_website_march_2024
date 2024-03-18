@@ -1,0 +1,70 @@
+.mainOurClientsSec{
+    background-color: #F6FCFF;
+}
+
+.OurClientsSecWr{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.innerOurClientSec{
+    padding: 0px 25px; 
+}
+
+.h3TextOurClientSec{
+    color: #000;
+    font-family: Poppins;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -3.36px;
+    margin: 0 auto;
+    padding: 100px 0px;
+    width: fit-content;
+}
+
+.imgWr{
+    
+}
+
+.letsJoinTogetherBtnWr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px 100px 0px;
+}
+
+.letsJoinTogetherBtn{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    text-decoration: none;
+    padding: 16px 68px 15px 48px;
+    background-color: #077fc8;
+    border-radius: 8px;
+}
+
+.letsJoinTogetherBtn::after{
+    content: " ";
+    background: url(/assets/images/buttons/arrow_small_white_right.svg);
+    background-size: cover;
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    transform: translateY(10%);
+    margin-left: 8px;
+    transition: ease-in-out 0.4s all;
+}
+
+.letsJoinTogetherBtn:hover:after{
+    margin-left: 14px;
+    transition: ease-in-out 0.4s all;
+}
+
+.letsJoinTogetherBtn:hover{
+    background: #0064a2;
+    transition: ease-in-out 0.2s all;
+}

@@ -1,0 +1,89 @@
+.mainOurOfferingsSec{
+    background-color: #ffffff;
+}
+
+.OurOfferingsSecWr{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.innerOurOfferingsSec{
+    padding: 0px 25px;
+}
+
+
+.h3TextOurOfferingsSec{
+    color: #000;
+    font-family: Poppins;
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -3.36px;
+    margin: 0 auto;
+    padding-top: 60px;
+    width: fit-content;
+}
+
+.pTextOurOfferingsSec{
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.72px;
+    max-width: 540px;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 50px;
+}
+
+/* slider CSS */
+
+.sliderWrOut{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.sliderWr{
+    padding: 0px 25px;
+    margin-bottom: 60px;
+}
+
+.sliderCard{
+    width: 400px;
+    background-color: #F6FCFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    /* padding: 20px 24px 38px 24px; */
+    border-radius: 8px;
+    /* margin: 0px 10px; */
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.cardIcon{
+    display: flex;
+    justify-content: center;
+    margin: 20px 24px 0px 24px;
+    height: 60px;
+}
+
+.cardText{
+
+}
+
+.cardTitle{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 20px 24px 8px 24px;
+}
+
+.cardDetail{
+    font-size: 18px;
+    margin: 0px 24px 38px 24px;
+    letter-spacing: -1.1px;
+}
+

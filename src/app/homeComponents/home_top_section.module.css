@@ -1,0 +1,182 @@
+.sectionWrapper{
+    max-width: 1320px;
+    padding-top: 173px;
+    margin: 0 auto;
+ }
+
+ .sectionHome{
+    background: #F3FBFF;
+ }
+
+ .innerLeftRightMargin{
+   margin: 0px 25px 0px 25px;
+ }
+
+ .sectionLeftBox{
+  width: 50%;
+ }
+
+ .sectionRightBox{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+ }
+
+ .innerSectionHomeWr{
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .homeTopBtnWr{
+   display: flex;
+   width: 287px;
+   height: 40px;
+   border-radius: 20px;
+   background: #D6EFFF;
+}
+
+.leftHiringWr{
+    display: inline-flex;
+    padding: 4px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #FFF;
+    margin: 4px;
+}
+
+.joinourTeamLink{
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  margin-left: 4px;
+  transition: ease-in-out 0.2s all;
+}
+
+.joinourTeamLink:hover{
+    color: #077fc8;
+    transition: ease-in-out 0.2s all;
+}
+
+
+
+
+.rightJoinourTeamWr{
+  display: flex;
+  align-items: center;
+}
+
+.joinourTeamLink:hover:after{
+  background: url(/assets/images/arrow_right_blue.svg);
+  transition: ease-in-out 0.2s all;
+}
+
+.joinourTeamLink::after{
+    content: " ";
+    background: url(/assets/images/arrow_right.svg);
+    background-size: cover;
+    position: absolute;
+    width: 16.875px;
+    height: 15px;
+    transform: translateY(36%);
+    margin-left: 6px;
+    transition: ease-in-out 0.2s all;
+}
+
+.homeTextOuterWr{
+  width: 778px;
+}
+
+.homeH1Text{
+  color: #000;
+  font-family: Poppins;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 50px 0 0 0;
+}
+
+.homePtext1{
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 26px 0 0 0;
+}
+
+.homeBtnWr{
+    margin: 60px 0 180px 0;
+    width: 414px;
+    height: 50px;
+    border-radius: 8px;
+    background: #077FC8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.2s all;
+}
+
+.homeBtnWr:hover{
+  background: #0064a2;
+  transition: ease-in-out 0.2s all;
+}
+
+.getYourProjectLink{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-decoration: none;
+    padding: 12px 60px;
+}
+
+.getYourProjectLink::after{
+    content: " ";
+    background: url(/assets/images/buttons/arrow_right_white.svg);
+    background-size: cover;
+    position: absolute;
+    width: 24px;
+    height: 21.333px;
+    transform: translateY(20%);
+    margin-left: 8px;
+    transition: ease-in-out 0.4s all;
+}
+
+.getYourProjectLink:hover:after {
+  margin-left: 14px;
+  transition: ease-in-out 0.4s all;
+}
+
+.homesectionWr{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/* Responsive media query */
+
+@media only screen and (max-width: 1299px) {
+  
+
+}
+
+@media only screen and (max-width: 1023px) {
+
+  .homesectionWr{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+}

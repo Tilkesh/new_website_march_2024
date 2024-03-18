@@ -1,0 +1,506 @@
+.wrapper {
+    max-width: 1320px;
+    margin: 0 auto;
+    height: 72px;
+    display: flow-root;
+}
+
+
+
+.nav_block_desktop_menu{
+    border-bottom: 1px solid #dadada;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    top: 0px;
+}
+
+
+.h_nav{
+    margin: 12px 25px;
+}
+
+.div_h_nav{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.wr_nav_left_links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.navigation_links {
+    display: flex;
+    gap: 25px;
+}
+
+.ch_nav_right_section{
+    display: flex;
+    align-items: center;
+}
+
+.nav_company_logo {
+    margin-right: 45px;
+}
+
+.ser_text {
+    display: flex;
+}
+
+.tech_text {
+    display: flex;
+}
+
+.ch_ser_text, .ch_tech_text {
+    margin-right: 6px;
+}
+
+.nav_services, .nav_technology {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background: none;
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.nav_about, .nav_blogs, .nav_customer, .nav_project, .a_nav_career{
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bt_nav_contact {
+    display: flex;
+    width: 106px;
+    height: 48px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #CBD5E1;
+    background: #FFF;
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+}
+
+.a_nav_career {
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav_career{
+    display: flex;
+}
+
+.d_none {
+    display: none!important;
+}
+
+/* Nav hover css start */
+
+.wr_nav_services:hover:after, .wr_nav_technology:hover:after, .nav_about:hover:after, .nav_project:hover:after, .nav_blogs:hover:after, .nav_customer:hover:after, .a_nav_career:hover:after{
+    transform: scaleX(1);
+}
+
+.wr_nav_services:after, .wr_nav_technology:after, .nav_about:after, .nav_project:after, .nav_blogs:after, .nav_customer:after, .a_nav_career:after{
+    border-left: none;
+    margin-left: 0;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid #077FC8;
+    display: block;
+    content: "";
+    transform: scaleX(0);
+    transition: transform .25s ease-in-out;
+    transform-origin: 0 50%;
+}
+
+.bt_nav_contact:hover {
+    border: 1px solid #077FC8;
+    color: #077FC8;
+    transition: color 0.3s ease, border 0.3s ease;
+}
+
+/* .bt_nav_contact{
+    transition: color 0.5s ease;
+} */
+
+/* responsive media query  */
+
+@media only screen and (max-width: 1200px) {
+    .navigation_links {
+        gap: 16px;
+    }
+
+    .nav_services, .nav_technology {
+        font-size: 14px;
+    }
+
+    .nav_about, .nav_blogs, .nav_customer, .nav_project, .a_nav_career, .bt_nav_contact{
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width: 1023px){
+    .nav_block_desktop_menu{
+            display: block!important;
+            z-index: 9999;
+        }
+    .nav_block_mobile_menu{
+        display: none!important;
+    }
+    }
+
+@media only screen and (max-width: 1023px){
+        .nav_block_mobile_menu{
+            display: block!important;
+            z-index: 9999;
+        }
+        .nav_block_mobile_menu{
+         position: fixed;
+         width: 100%;
+         background: #fff;
+         }
+     }
+
+
+     /* Mobile menu */
+
+     .mobile_div_h_nav{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+     }
+
+
+     /* dropdown css */
+
+     .dropdown_menu{
+        position: absolute;
+        z-index: 1000;
+        display: none;
+        min-width: 10rem;
+        padding: 0.5rem 0;
+        padding: 2.0rem 0rem 0rem 0rem;
+        font-size: 1rem;
+        color: #212529;
+        text-align: left;
+        list-style: none;
+        
+     }
+    
+     .show{
+        display: block;
+     }
+    
+     .eventsNav{
+        background: #fff;
+        border: 1px solid #eaeaea;
+        position: relative;
+        padding: 16px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px #dadada;
+     }
+    
+    
+     .dropdown_card_row{
+        display: flex;
+     }
+    
+     .dropdown_menu_col{
+        text-align: left;
+        width: 200px;
+        margin-right: 20px;
+    
+     }
+
+     .services_col{
+        width: 300px;
+     }
+    
+     
+     .dropdown_header_text{
+        text-transform: uppercase;
+        font-weight: 600;
+     }
+    
+     .dropdown_item{
+        color: #000;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+        margin: 12px 0px;
+     }
+    
+     .dropdown_item:hover{
+        color: #077FC8;
+     }
+    
+     .dropdown_h_text{
+        font-weight: 600;
+     }
+    
+     .header_icon {
+        width: 24px;
+        height: 24px;
+     }
+    
+     .header_icon_iosApp::before{
+        content: " ";
+        width: 24px;
+        height: 24px;
+        background: url(/assets/images/header/ios_app_menu.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_iosApp:hover::before{
+        background: url(/assets/images/header/ios_app_menu_blue.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_androidApp::before{
+        content: " ";
+        width: 24px;
+        height: 24px;
+        background: url(/assets/images/header/android_menu.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_androidApp:hover::before{
+        background: url(/assets/images/header/android_menu_blue.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_flutterApp::before{
+        content: " ";
+        width: 24px;
+        height: 24px;
+        background: url(/assets/images/header/flutter_menu.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_flutterApp:hover::before{
+        background: url(/assets/images/header/flutter_menu_blue.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_php::before{
+        content: " ";
+        width: 24px;
+        height: 24px;
+        background: url(/assets/images/header/php_menu.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_php:hover::before{
+        background: url(/assets/images/header/php_menu_blue.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_reactJS::before{
+        content: " ";
+        width: 24px;
+        height: 24px;
+        background: url(/assets/images/header/reactjs_menu.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_reactJS:hover::before{
+        background: url(/assets/images/header/reactjs_menu_blue.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_nodeJS::before{
+        content: " ";
+        width: 24px;
+        height: 24px;
+        background: url(/assets/images/header/nodejs_menu.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_nodeJS:hover::before{
+        background: url(/assets/images/header/nodejs_menu_blue.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_laravel::before{
+        content: " ";
+        width: 24px;
+        height: 24px;
+        background: url(/assets/images/header/laravel_menu.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_laravel:hover::before{
+        background: url(/assets/images/header/laravel_menu_blue.svg);
+        background-size: cover;
+     }
+
+     .showTechnologies{
+        display: block;
+     }
+
+     .active {
+        display: block;
+        right: 0;
+        transition: .5s;
+     }
+
+     .navMenuPopup{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        right: -100%;
+        transition: .5s;
+     }
+
+     .hamburger_menu{
+        cursor: pointer;
+     }
+
+     .header_icon_mobile_app_development::before{
+        content: " ";
+        width: 24px;
+        height: 24px;
+        background: url(/assets/images/header/mobile_app_development.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_mobile_app_development:hover::before{
+        background: url(/assets/images/header/mobile_app_development_blue.svg);
+        background-size: cover;
+     }
+
+     .header_icon_web_development::before{
+        content: " ";
+        width: 24px;
+        height: 24px;
+        background: url(/assets/images/header/web_development.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_web_development:hover::before{
+        background: url(/assets/images/header/web_development_blue.svg);
+        background-size: cover;
+     }
+
+     .header_icon_saas_applications::before{
+        content: " ";
+        width: 24px;
+        height: 24px;
+        background: url(/assets/images/header/saas_applications.svg);
+        background-size: cover;
+     }
+    
+     .header_icon_saas_applications:hover::before{
+        background: url(/assets/images/header/saas_applications_blue.svg);
+        background-size: cover;
+     }
+     
+     .header_icon_custom_software_development::before{
+      content: " ";
+      width: 24px;
+      height: 24px;
+      background: url(/assets/images/header/custom_software_development.svg);
+      background-size: cover;
+   }
+  
+   .header_icon_custom_software_development:hover::before{
+      background: url(/assets/images/header/custom_software_development_blue.svg);
+      background-size: cover;
+   }
+
+   .header_icon_it_consulting::before{
+      content: " ";
+      width: 24px;
+      height: 24px;
+      background: url(/assets/images/header/it_consulting.svg);
+      background-size: cover;
+   }
+  
+   .header_icon_it_consulting:hover::before{
+      background: url(/assets/images/header/it_consulting_blue.svg);
+      background-size: cover;
+   }
+
+   .header_icon_ecommerce_development::before{
+      content: " ";
+      width: 24px;
+      height: 24px;
+      background: url(/assets/images/header/ecommerce_development.svg);
+      background-size: cover;
+   }
+  
+   .header_icon_ecommerce_development:hover::before{
+      background: url(/assets/images/header/ecommerce_development_blue.svg);
+      background-size: cover;
+   }
+
+   .header_icon_marketplace_development::before{
+      content: " ";
+      width: 24px;
+      height: 24px;
+      background: url(/assets/images/header/marketplace_development.svg);
+      background-size: cover;
+   }
+  
+   .header_icon_marketplace_development:hover::before{
+      background: url(/assets/images/header/marketplace_development_blue.svg);
+      background-size: cover;
+   }
+
+   .header_icon_mvp_development::before{
+      content: " ";
+      width: 24px;
+      height: 24px;
+      background: url(/assets/images/header/mvp_development.svg);
+      background-size: cover;
+   }
+  
+   .header_icon_mvp_development:hover::before{
+      background: url(/assets/images/header/mvp_development_blue.svg);
+      background-size: cover;
+   }
+
+   .header_icon_ai_ml_development::before{
+      content: " ";
+      width: 24px;
+      height: 24px;
+      background: url(/assets/images/header/ai_ml_development.svg);
+      background-size: cover;
+   }
+  
+   .header_icon_ai_ml_development:hover::before{
+      background: url(/assets/images/header/ai_ml_development_blue.svg);
+      background-size: cover;
+   }
+
+   
